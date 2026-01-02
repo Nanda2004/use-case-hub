@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Usecases Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="logo.png" class="logo" />
+      <span class="brand">Kodryx</span>
+    </div>
+
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search usecases..." />
+      <button id="clearSearch">✕</button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <strong>Category</strong>
+        <div id="categoryFilters"></div>
+      </div>
+      <button id="resetFilters">Reset</button>
+    </aside>
+
+    <section class="content">
+      <div id="cards" class="cards-grid"></div>
+      <div class="load-more-wrap">
+        <button id="loadMore">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <h2 id="modalTitle"></h2>
+      <div id="modalDesc"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
